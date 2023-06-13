@@ -1,0 +1,137 @@
+body {
+    background-image: url(https://images.pexels.com/photos/2609107/pexels-photo-2609107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: 100%;
+    flex-direction: row;
+    gap: 50px;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+a {
+    all: unset;
+}
+
+
+.site {
+    font-size: 30px;
+}
+
+.container {
+    width: 80%;
+    color: rgb(255, 255, 255)
+}
+
+.voltar {
+    width: 60%;
+    color: white
+}
+
+#textHeader {
+    font-size: 20px;
+}
+
+#menuLeft {
+    background-color: rgba(165, 243, 141, 0.7);
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+    padding: 30px;
+    gap: 50px;
+    border-radius: 10px;
+}
+
+.lbl-button {
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.lbl-input {
+    color: white;
+    font-weight: 600;
+}
+
+#formulario {
+    background-color: rgba(165, 243, 141, 0.7);
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+#containerBtnSexo {
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#btn-voltar {
+    width: 200px;
+    font-size: 20px;
+}
+
+#lista-usuarios {
+    background-color: rgba(165, 243, 141, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+#bloco-buscar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+#bloco-novaNoticia {
+    background-color: rgba(165, 243, 141, 0.7);
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    padding: 50px;
+    padding-top: 20px;
+    border-radius: 30px;
+    width: 690px;
+}
+
+#attPost {
+    background-color: rgba(165, 243, 141, 0.7);
+}
+
+#lista-noticias {
+    background-color: rgba(165, 243, 141, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+#textAlt {
+    font-size: 25px;
+}
+
+#lista-noticias-n {
+    background-color: rgba(165, 243, 141, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+#lista-noticias-editar {
+    background-color: rgba(165, 243, 141, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 30px;
+}
