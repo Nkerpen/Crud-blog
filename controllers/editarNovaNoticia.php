@@ -43,6 +43,6 @@ mysqli_query($conexao, "UPDATE infos SET infoTitulo = '$NoticiaTitulo',
 infoCorpo = '$NoticiaCorpo'
 WHERE infoId = '$NoticiaCodigo'");
 
-header("location:../views/editarNoticias.php");
+header("location:../views/painel.php");
 
 ?>

@@ -6,10 +6,10 @@ include("../models/conexao.php");
     <?php include '../css/style.css'; ?>
 </style>
 
-<div class="container voltar" class="d-flex justify-content-center">
-    <div id="menuLeft" class="d-flex justify-content-center">
-        <a class="btn rounded lbl-button" id="btn-voltar" href="../index.php">Voltar</a>
-    </div>
+<div class="container voltar"class="d-flex justify-content-center">
+<div id="menuLeft" class="d-flex justify-content-center">
+    <a class="btn rounded lbl-button" id="btn-voltar" href="painel.php">Voltar</a>
+</div>
 </div>
 
 <?php
@@ -19,7 +19,6 @@ INNER JOIN imgs ON noticiaImgId = imgId
 INNER JOIN infos ON noticiaInfoId = infoId
 INNER JOIN usuarios ON noticiaUsuarioId = usuarioId
 where noticiaId = $PostagemCodigo");
-
 ?>
 <div class="container p-5 rounded shadow mt-5" id="attPost">
     <table border='1' width="800px" class="table  ">
@@ -59,15 +58,14 @@ where noticiaId = $PostagemCodigo");
 
                         </b>
                         <hr>
-                        <textarea class="form-control" type="text" name="noticiaCorpo"><?php echo $exibe[9] ?>                                       
-                                                                    </textarea>
+                        <textarea class="form-control" type="text" name="noticiaCorpo" ><?php echo $exibe[9] ?></textarea>
                     </td>
                 </tr>
                 <tr>
                     <td class="align-middle">
                         <label class="form-label lbl-input" id="textAlt">Alterar Imagem</label><br>
                         <input type="hidden" name="MAX_FILE_SIZE" value="99999999">
-                        <input type="file" name="arquivo" class="mt-5" />
+                        <input type="file" name="arquivo" class="mt-5"/>
                     </td>
                     <td class="text-center">
                         <input class="btn btn-danger mt-5 w-50" id="alt" type="submit" value="Atualizar">

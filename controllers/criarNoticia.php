@@ -12,7 +12,7 @@ $ImgNameRandom = md5($ImgName) . "." . $extension;
 if ($extension == "png") {
     move_uploaded_file($arquivo['tmp_name'][0], $diretorio . "/" . $ImgNameRandom);
 } else {
-    die("Arquivo não é compatível com o tipo 'PNG'");
+    exit("Arquivo não é compatível com o tipo 'PNG'");
 }
 
 mysqli_query($conexao, "INSERT INTO imgs(imgNome, imgNomeAleatorio) VALUES ('$ImgName', '$ImgNameRandom')");
@@ -37,6 +37,6 @@ $id_noticiaInfo_last = mysqli_insert_id($conexao);
 mysqli_query($conexao, "INSERT INTO noticias (noticiaImgId, noticiaInfoId, noticiaUsuarioId) 
 VALUES ('$id_imgTable_last', '$id_noticiaInfo_last' , '$PostagemUsuarioCodigo');");
 
-header("location:../index.php");
+header("location:../views/painel.php");
 
 ?>
